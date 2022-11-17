@@ -1,4 +1,4 @@
-def has_path_dfs(graph):
+def connected_component_dfs(graph):
     component_count = 0
     visited_node = []
 
@@ -22,7 +22,7 @@ def has_path_dfs(graph):
     return component_count
 
 
-def has_path_recursive_dfs(graph):
+def connected_component_recursive_dfs(graph):
     component_count = 0
     visited_node = []
 
@@ -56,5 +56,5 @@ graph = {
 
 }
 
-print(has_path_dfs(graph))
-print(has_path_recursive_dfs(graph))
+print(connected_component_dfs(graph))
+print(connected_component_recursive_dfs(graph))
